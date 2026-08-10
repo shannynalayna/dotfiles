@@ -14,7 +14,6 @@ return {
 			require('mason-lspconfig').setup({
 				ensure_installed = {
 					'vue_ls',
-					'copilot',
 					'tsgo',
 					'jsonls',
 					'lua_ls',
@@ -26,7 +25,7 @@ return {
 					'eslint',
 				},
 				automatic_enable = {
-					exclude = { 'vtsls' },
+					exclude = { 'vtsls', 'copilot' },
 				},
 			})
 
@@ -382,7 +381,6 @@ return {
 				'bashls',
 				'jsonls',
 				'phpactor',
-				'copilot',
 				'oxlint',
 				'oxfmt',
 				'eslint',

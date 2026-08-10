@@ -68,7 +68,6 @@ return {
 	-- optional: provides snippets for the snippet source
 	dependencies = {
 		'rafamadriz/friendly-snippets',
-		'fang2hou/blink-copilot',
 		'saghen/blink.lib'
 	},
 	build = function()
@@ -199,7 +198,7 @@ return {
 		-- Default list of enabled providers defined so that you can extend it
 		-- elsewhere in your config, without redefining it, due to `opts_extend`
 		sources = {
-			default = { 'lsp', 'path', 'snippets', 'buffer', 'copilot' },
+			default = { 'lsp', 'path', 'snippets', 'buffer' },
 			providers = {
 				lsp = {
 					name = "LSP",
@@ -211,21 +210,6 @@ return {
 				buffer = {
 					name = "Buffer",
 					score_offset = -10,
-				},
-				copilot = {
-					name = "copilot",
-					module = "blink-copilot",
-					score_offset = 100,
-					async = true,
-					opts = {
-						-- Local options override global ones
-						max_completions = 3, -- Override global max_completions
-
-						-- Final settings:
-						-- * max_completions = 3
-						-- * max_attempts = 2
-						-- * all other options are default
-					}
 				},
 			},
 		},

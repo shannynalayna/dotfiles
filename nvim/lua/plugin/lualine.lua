@@ -63,7 +63,6 @@ return {
 				ignore_lsp = {
 
 					'null-ls',
-					'copilot',
 					'oxlint',
 				},
 				-- Display the LSP name
@@ -85,7 +84,6 @@ return {
 				},
 				ignore_lsp = {
 					'null-ls',
-					'copilot',
 				},
 				show_name = true,
 				cond = function()
