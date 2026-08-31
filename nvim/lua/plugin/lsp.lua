@@ -14,13 +14,12 @@ return {
 			require('mason-lspconfig').setup({
 				ensure_installed = {
 					'vue_ls',
-					'tsgo',
 					'jsonls',
 					'lua_ls',
 					'bashls',
 					'phpactor',
 					'oxlint',
-					'tsgo',
+					'tsc',
 					'oxfmt',
 					'eslint',
 				},
@@ -376,7 +375,7 @@ return {
 			vim.lsp.enable({
 				'vue_ls',
 				'vtsls',
-				'tsgo',
+				'tsc',
 				'lua_ls',
 				'bashls',
 				'jsonls',
